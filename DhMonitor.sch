@@ -1,13 +1,13 @@
 EESchema Schematic File Version 4
-LIBS:ProMini-cache
+LIBS:DhMonitor-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "DHMonitor"
 Date "sam. 04 avril 2015"
-Rev ""
+Rev "0.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -61,7 +61,7 @@ A4
 Text Label 9550 3200 3    60   ~ 0
 A5
 Text Notes 8550 575  0    60   ~ 0
-Shield Arduino Pro Mini \n
+DhMonitor Arduino Pro Mini \n
 Wire Notes Line
 	8525 650  9700 650 
 Wire Notes Line
@@ -121,10 +121,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 2100 9000 2100
 Wire Wire Line
-	9350 2200 9000 2200
-Wire Wire Line
-	9000 2300 9350 2300
-Wire Wire Line
 	9350 2400 9000 2400
 Wire Wire Line
 	9000 2500 9350 2500
@@ -163,12 +159,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5C9941D4
-P 5550 950
-F 0 "J1" H 5630 942 50  0000 L CNN
-F 1 "Power" H 5630 851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5550 950 50  0001 C CNN
-F 3 "~" H 5550 950 50  0001 C CNN
-	1    5550 950 
+P 5550 850
+F 0 "J1" H 5630 842 50  0000 L CNN
+F 1 "Power" H 5630 751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5550 850 50  0001 C CNN
+F 3 "~" H 5550 850 50  0001 C CNN
+	1    5550 850 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -209,14 +205,9 @@ Wire Wire Line
 Wire Wire Line
 	10050 700  5000 700 
 Wire Wire Line
-	5000 700  5000 950 
-Wire Wire Line
-	5000 950  5350 950 
-Wire Wire Line
-	5000 950  5000 1550
+	5000 850  5350 850 
 Wire Wire Line
 	5000 1550 5350 1550
-Connection ~ 5000 950 
 Wire Wire Line
 	5000 1550 5000 2050
 Wire Wire Line
@@ -232,7 +223,7 @@ Wire Wire Line
 Wire Wire Line
 	10850 600  6500 600 
 Wire Wire Line
-	6500 600  6500 1600
+	6500 600  6500 1400
 Wire Wire Line
 	10100 1900 10250 1900
 Connection ~ 10250 1900
@@ -267,9 +258,7 @@ Wire Wire Line
 	6850 3000 5350 3000
 Connection ~ 6850 2150
 Wire Wire Line
-	5350 1050 8850 1050
-Wire Wire Line
-	8850 1050 8850 1350
+	5350 950  8850 950 
 Wire Wire Line
 	8850 1350 10350 1350
 Wire Wire Line
@@ -341,14 +330,10 @@ Connection ~ 10300 2500
 Wire Wire Line
 	10300 2500 10500 2500
 NoConn ~ 9300 2100
-NoConn ~ 9300 2200
-NoConn ~ 9300 2300
 NoConn ~ 9300 2400
 NoConn ~ 9300 2500
 NoConn ~ 9300 2700
 NoConn ~ 9000 2100
-NoConn ~ 9000 2200
-NoConn ~ 9000 2300
 NoConn ~ 9000 2400
 NoConn ~ 9000 2500
 NoConn ~ 9000 2700
@@ -398,4 +383,68 @@ Wire Wire Line
 	10500 2600 10500 3550
 Wire Wire Line
 	10450 2700 10250 2700
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 5C9A324B
+P 5550 1200
+F 0 "J5" H 5630 1192 50  0000 L CNN
+F 1 "HX711" H 5630 1101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5550 1200 50  0001 C CNN
+F 3 "~" H 5550 1200 50  0001 C CNN
+	1    5550 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2200 8700 1200
+Wire Wire Line
+	8700 2200 9350 2200
+Wire Wire Line
+	8600 2300 8600 1300
+Wire Wire Line
+	8600 2300 9350 2300
+Text Label 5750 1600 0    50   ~ 0
+Vcc
+Text Label 5750 2150 0    50   ~ 0
+Vcc
+Text Label 5800 3000 0    50   ~ 0
+Vcc
+Text Label 5800 1800 0    50   ~ 0
+D8
+Text Label 5150 2050 0    50   ~ 0
+Gnd
+Text Label 5200 1550 0    50   ~ 0
+Gnd
+Wire Wire Line
+	5000 700  5000 850 
+Connection ~ 5000 850 
+Wire Wire Line
+	5000 850  5000 1100
+Wire Wire Line
+	8850 950  8850 1350
+Wire Wire Line
+	5350 1100 5000 1100
+Connection ~ 5000 1100
+Wire Wire Line
+	5000 1100 5000 1550
+Wire Wire Line
+	8700 1200 5350 1200
+Wire Wire Line
+	8600 1300 5350 1300
+Wire Wire Line
+	5350 1400 6500 1400
+Connection ~ 6500 1400
+Wire Wire Line
+	6500 1400 6500 1600
+Text Label 5200 1100 0    50   ~ 0
+Gnd
+Text Label 5200 2900 0    50   ~ 0
+Gnd
+Text Label 5200 850  0    50   ~ 0
+Gnd
+Text Label 5900 1400 0    50   ~ 0
+Vcc
+Text Label 5900 1300 0    50   ~ 0
+Sck
+Text Label 5900 1200 0    50   ~ 0
+Dt
 $EndSCHEMATC
