@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
+LIBS:ProMini-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date ""
+Date "sam. 04 avril 2015"
 Rev ""
 Comp ""
 Comment1 ""
@@ -13,241 +14,388 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text Label 10350 1500 1    60   ~ 0
+RAW
+Text Label 9550 1000 1    60   ~ 0
+DTR
+Text Label 9750 1000 1    60   ~ 0
+0(Rx)
+Text Label 9000 1600 0    60   ~ 0
+1(Tx)
+Text Label 9000 1700 0    60   ~ 0
+0(Rx)
+Text Label 9000 1800 0    60   ~ 0
+Reset
+Text Label 9000 2000 0    60   ~ 0
+2
+Text Label 9000 2100 0    60   ~ 0
+3(**)
+Text Label 9000 2200 0    60   ~ 0
+4
+Text Label 9000 2300 0    60   ~ 0
+5(**)
+Text Label 9000 2400 0    60   ~ 0
+6(**)
+Text Label 9000 2500 0    60   ~ 0
+7
+Text Label 9000 2600 0    60   ~ 0
+8
+Text Label 9000 2700 0    60   ~ 0
+9(**)
+Text Label 10500 2700 0    60   ~ 0
+10(**/SS)
+Text Label 10500 2600 0    60   ~ 0
+11(**/MOSI)
+Text Label 10500 2500 0    60   ~ 0
+12(MISO)
+Text Label 10500 2400 0    60   ~ 0
+13(SCK)
+Text Label 10500 2300 0    60   ~ 0
+A0
+Text Label 10500 2200 0    60   ~ 0
+A1
+Text Label 10500 2100 0    60   ~ 0
+A2
+Text Label 9650 3200 3    60   ~ 0
+A4
+Text Label 9550 3200 3    60   ~ 0
+A5
+Text Notes 8550 575  0    60   ~ 0
+Shield Arduino Pro Mini \n
+Wire Notes Line
+	8525 650  9700 650 
+Wire Notes Line
+	9700 650  9700 475 
+Text Label 9950 3200 3    60   ~ 0
+A7
+Text Label 10050 3200 3    60   ~ 0
+A6
 $Comp
-L Connector_Generic:Conn_01x03 OneWire1
-U 1 1 5C98A795
-P 4800 2500
-F 0 "OneWire1" H 4880 2542 50  0000 L CNN
-F 1 "Conn_01x03" H 4880 2451 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 4800 2500 50  0001 C CNN
-F 3 "~" H 4800 2500 50  0001 C CNN
-	1    4800 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x05 J5
-U 1 1 5C98A962
-P 4800 3200
-F 0 "J5" H 4879 3242 50  0000 L CNN
-F 1 "RTC" H 4879 3151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4800 3200 50  0001 C CNN
-F 3 "~" H 4800 3200 50  0001 C CNN
-	1    4800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x12_Male J1
-U 1 1 5C98A9BE
-P 2600 3100
-F 0 "J1" H 2680 3092 50  0000 L CNN
-F 1 "ProMiniDTRSide" V 2680 3001 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 2600 3100 50  0001 C CNN
-F 3 "~" H 2600 3100 50  0001 C CNN
-	1    2600 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J6
-U 1 1 5C98AAE3
-P 4800 4000
-F 0 "J6" H 4879 3992 50  0000 L CNN
-F 1 "sdCardReader" H 4879 3901 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4800 4000 50  0001 C CNN
-F 3 "~" H 4800 4000 50  0001 C CNN
-	1    4800 4000
-	1    0    0    -1  
-$EndComp
-NoConn ~ 2800 2600
-NoConn ~ 2800 2700
-NoConn ~ 2800 2800
-NoConn ~ 2800 2900
-NoConn ~ 2800 3100
-NoConn ~ 2800 3200
-NoConn ~ 2800 3300
-NoConn ~ 2800 3400
-NoConn ~ 2800 3500
-NoConn ~ 2800 3700
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5C98AEF2
-P 3600 1800
-F 0 "J3" V 3566 1612 50  0000 R CNN
-F 1 "PowerRaw" V 3475 1612 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 1800 50  0001 C CNN
-F 3 "~" H 3600 1800 50  0001 C CNN
-	1    3600 1800
+L Connector_Generic:Conn_01x02 P3
+U 1 1 56D74FB3
+P 9550 3000
+F 0 "P3" H 9550 3150 50  0000 C CNN
+F 1 "ADC" V 9650 3000 50  0000 C CNN
+F 2 "Socket_Arduino_Pro_Mini:Socket_Strip_Arduino_1x02" H 9550 3000 50  0001 C CNN
+F 3 "" H 9550 3000 50  0000 C CNN
+	1    9550 3000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x12 J4
-U 1 1 5C98A5C1
-P 3800 3200
-F 0 "J4" H 3880 3192 50  0000 L CNN
-F 1 "ProMiniRawSide" V 3880 3101 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x12_P2.54mm_Vertical" H 3800 3200 50  0001 C CNN
-F 3 "~" H 3800 3200 50  0001 C CNN
-	1    3800 3200
-	-1   0    0    1   
+L Connector_Generic:Conn_01x06 P2
+U 1 1 56D75238
+P 9750 1200
+F 0 "P2" H 9750 1550 50  0000 C CNN
+F 1 "COM" V 9850 1200 50  0000 C CNN
+F 2 "Socket_Arduino_Pro_Mini:Socket_Strip_Arduino_1x06" H 9750 1200 50  0001 C CNN
+F 3 "" H 9750 1200 50  0000 C CNN
+	1    9750 1200
+	0    -1   1    0   
+$EndComp
+Text Label 9650 1000 1    60   ~ 0
+1(Tx)
+$Comp
+L Connector_Generic:Conn_01x12 P1
+U 1 1 56D754D1
+P 9550 2100
+F 0 "P1" H 9550 2750 50  0000 C CNN
+F 1 "Digital" V 9650 2100 50  0000 C CNN
+F 2 "Socket_Arduino_Pro_Mini:Socket_Strip_Arduino_1x12" H 9550 2100 50  0001 C CNN
+F 3 "" H 9550 2100 50  0000 C CNN
+	1    9550 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x12 P4
+U 1 1 56D755F3
+P 10050 2100
+F 0 "P4" H 10050 2750 50  0000 C CNN
+F 1 "Analog" V 10150 2100 50  0000 C CNN
+F 2 "Socket_Arduino_Pro_Mini:Socket_Strip_Arduino_1x12" H 10050 2100 50  0001 C CNN
+F 3 "" H 10050 2100 50  0000 C CNN
+	1    10050 2100
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 2600 4000 2400
+	9350 1800 9000 1800
 Wire Wire Line
-	4000 2400 3600 2400
+	9350 2100 9000 2100
 Wire Wire Line
-	3600 2400 3600 2000
+	9350 2200 9000 2200
 Wire Wire Line
-	4000 2700 4050 2700
+	9000 2300 9350 2300
 Wire Wire Line
-	4050 2300 3700 2300
+	9350 2400 9000 2400
 Wire Wire Line
-	3700 2300 3700 2000
-NoConn ~ 4000 2800
-Text Label 3800 2300 0    50   ~ 0
-GND
-Text Label 3650 2400 0    50   ~ 0
-+
+	9000 2500 9350 2500
 Wire Wire Line
-	4050 2700 4150 2700
+	9350 2700 9000 2700
 Wire Wire Line
-	4150 2700 4150 2400
+	10350 1600 10250 1600
 Wire Wire Line
-	4150 2400 4600 2400
-Connection ~ 4050 2700
+	10500 2400 10400 2400
+Wire Wire Line
+	10500 2600 10250 2600
+Wire Notes Line
+	11200 3400 8500 3400
+Wire Notes Line
+	8500 3400 8500 500 
+Text Notes 9650 1600 0    60   ~ 0
+1
+Wire Wire Line
+	9950 1000 9950 950 
+Wire Wire Line
+	9950 950  10050 950 
+Wire Wire Line
+	10050 950  10050 1000
+Connection ~ 10050 950 
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5C99402E
+P 5550 1650
+F 0 "J2" H 5629 1692 50  0000 L CNN
+F 1 "DS18B20" H 5629 1601 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5550 1650 50  0001 C CNN
+F 3 "~" H 5550 1650 50  0001 C CNN
+	1    5550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5C9941D4
+P 5550 950
+F 0 "J1" H 5630 942 50  0000 L CNN
+F 1 "Power" H 5630 851 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 5550 950 50  0001 C CNN
+F 3 "~" H 5550 950 50  0001 C CNN
+	1    5550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J3
+U 1 1 5C9943C4
+P 5550 2250
+F 0 "J3" H 5629 2242 50  0000 L CNN
+F 1 "RTC" H 5629 2151 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5550 2250 50  0001 C CNN
+F 3 "~" H 5550 2250 50  0001 C CNN
+	1    5550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 5C994542
+P 5550 3200
+F 0 "J4" H 5630 3192 50  0000 L CNN
+F 1 "SD Card Module" H 5630 3101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5550 3200 50  0001 C CNN
+F 3 "~" H 5550 3200 50  0001 C CNN
+	1    5550 3200
+	1    0    0    -1  
+$EndComp
 $Comp
 L Device:R_Small R1
-U 1 1 5C98B434
-P 4400 2550
-F 0 "R1" H 4459 2596 50  0000 L CNN
-F 1 "47k" H 4459 2505 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical" H 4400 2550 50  0001 C CNN
-F 3 "~" H 4400 2550 50  0001 C CNN
-	1    4400 2550
+U 1 1 5C9946A9
+P 6500 1700
+F 0 "R1" H 6559 1746 50  0000 L CNN
+F 1 "47k" H 6559 1655 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_4.9x4.2mm_P2.54mm_Vertical" H 6500 1700 50  0001 C CNN
+F 3 "~" H 6500 1700 50  0001 C CNN
+	1    6500 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4600 2500 4550 2500
+	10050 950  10050 700 
 Wire Wire Line
-	4550 2500 4550 2450
+	10050 700  5000 700 
 Wire Wire Line
-	4550 2450 4400 2450
+	5000 700  5000 950 
 Wire Wire Line
-	4600 2600 4600 2650
+	5000 950  5350 950 
 Wire Wire Line
-	4600 2650 4400 2650
+	5000 950  5000 1550
 Wire Wire Line
-	2450 2450 2450 3600
+	5000 1550 5350 1550
+Connection ~ 5000 950 
 Wire Wire Line
-	2450 3600 2800 3600
+	5000 1550 5000 2050
 Wire Wire Line
-	4400 2650 4250 2650
+	5000 2050 5350 2050
+Connection ~ 5000 1550
 Wire Wire Line
-	4250 2650 4250 2900
+	5000 2050 5000 2900
 Wire Wire Line
-	4250 2900 4150 2900
-Connection ~ 4400 2650
+	5000 2900 5350 2900
+Connection ~ 5000 2050
 Wire Wire Line
-	4800 3000 4600 3000
+	10850 1900 10850 850 
 Wire Wire Line
-	4300 3000 4300 2350
+	10850 600  6500 600 
 Wire Wire Line
-	2600 2350 2600 3000
+	6500 600  6500 1600
 Wire Wire Line
-	2600 3000 2800 3000
+	10100 1900 10250 1900
+Connection ~ 10250 1900
+Wire Wire Line
+	6500 1600 5350 1600
+Wire Wire Line
+	5350 1600 5350 1650
+Connection ~ 6500 1600
+Wire Wire Line
+	6500 1800 5350 1800
+Wire Wire Line
+	5350 1800 5350 1750
+Wire Wire Line
+	6500 1800 7650 1800
+Wire Wire Line
+	7650 1800 7650 2600
+Wire Wire Line
+	7650 2600 9350 2600
+Connection ~ 6500 1800
+Connection ~ 9350 2600
+Wire Wire Line
+	9350 2600 9550 2600
+Wire Wire Line
+	6500 1600 6850 1600
+Wire Wire Line
+	6850 1600 6850 2150
+Wire Wire Line
+	6850 2150 5350 2150
+Wire Wire Line
+	6850 2150 6850 3000
+Wire Wire Line
+	6850 3000 5350 3000
+Connection ~ 6850 2150
+Wire Wire Line
+	5350 1050 8850 1050
+Wire Wire Line
+	8850 1050 8850 1350
+Wire Wire Line
+	8850 1350 10350 1350
+Wire Wire Line
+	10350 1350 10350 1600
+Wire Wire Line
+	9650 3200 9650 3450
+Wire Wire Line
+	9650 3450 7300 3450
+Wire Wire Line
+	7300 2250 5350 2250
+Wire Wire Line
+	7300 2250 7300 3450
+Wire Wire Line
+	9550 3050 9550 3200
+Wire Wire Line
+	9550 3350 7450 3350
+Wire Wire Line
+	7450 3350 7450 2350
+Wire Wire Line
+	7450 2350 5350 2350
+Connection ~ 9550 3200
+Wire Wire Line
+	9550 3200 9550 3350
+Wire Wire Line
+	8000 2000 8000 2450
+Wire Wire Line
+	8000 2450 5350 2450
+Wire Wire Line
+	8000 2000 9350 2000
+NoConn ~ 5350 2550
+NoConn ~ 5350 3100
+NoConn ~ 5350 3600
+Wire Wire Line
+	10450 3500 7200 3500
+Wire Wire Line
+	7200 3500 7200 3200
+Wire Wire Line
+	7200 3200 5350 3200
+Wire Wire Line
+	10250 2500 10300 2500
+Wire Wire Line
+	10450 3500 10450 2700
+Wire Wire Line
+	10500 3550 7100 3550
+Wire Wire Line
+	7100 3550 7100 3300
+Wire Wire Line
+	7100 3300 5350 3300
+Wire Wire Line
+	5350 3400 7000 3400
+Wire Wire Line
+	7000 3400 7000 3600
+Wire Wire Line
+	7000 3600 10400 3600
+Wire Wire Line
+	10400 3600 10400 2400
+Connection ~ 10400 2400
+Wire Wire Line
+	10400 2400 10250 2400
+Wire Wire Line
+	5350 3500 6900 3500
+Wire Wire Line
+	6900 3500 6900 3650
+Wire Wire Line
+	6900 3650 10300 3650
+Wire Wire Line
+	10300 3650 10300 2500
+Connection ~ 10300 2500
+Wire Wire Line
+	10300 2500 10500 2500
+NoConn ~ 9300 2100
+NoConn ~ 9300 2200
+NoConn ~ 9300 2300
+NoConn ~ 9300 2400
+NoConn ~ 9300 2500
+NoConn ~ 9300 2700
+NoConn ~ 9000 2100
+NoConn ~ 9000 2200
+NoConn ~ 9000 2300
+NoConn ~ 9000 2400
+NoConn ~ 9000 2500
+NoConn ~ 9000 2700
+Text Label 10500 2000 0    60   ~ 0
+A3
+NoConn ~ 10250 2000
+NoConn ~ 10250 2100
+NoConn ~ 10250 2200
+NoConn ~ 10250 2300
+NoConn ~ 9550 1000
+Wire Wire Line
+	10500 1700 10500 950 
+Wire Wire Line
+	10050 950  10500 950 
+Wire Wire Line
+	9850 1000 9850 850 
+Connection ~ 10850 850 
+Wire Wire Line
+	10850 850  10850 600 
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5C98C30A
-P 3400 3550
-F 0 "J2" H 3480 3542 50  0000 L CNN
-F 1 "A4A5" V 3480 3451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3400 3550 50  0001 C CNN
-F 3 "~" H 3400 3550 50  0001 C CNN
-	1    3400 3550
-	-1   0    0    1   
+L Connector_Generic:Conn_01x02 P5
+U 1 1 56D7505C
+P 9950 3000
+F 0 "P5" H 9950 3150 50  0000 C CNN
+F 1 "ADC" V 10050 3000 50  0000 C CNN
+F 2 "Socket_Arduino_Pro_Mini:Socket_Strip_Arduino_1x02" H 9950 3000 50  0001 C CNN
+F 3 "" H 9950 3000 50  0000 C CNN
+	1    9950 3000
+	0    -1   -1   0   
 $EndComp
+NoConn ~ 9950 3200
+NoConn ~ 10050 3200
 Wire Wire Line
-	4600 3100 4400 3100
+	10250 1700 10500 1700
 Wire Wire Line
-	4400 3100 4400 3150
+	9850 850  10850 850 
 Wire Wire Line
-	3600 3150 3600 3450
+	10250 1900 10850 1900
+NoConn ~ 9350 1900
+NoConn ~ 10250 1800
+NoConn ~ 9350 1800
+NoConn ~ 9350 1700
+NoConn ~ 9350 1600
+NoConn ~ 9650 1000
+NoConn ~ 9750 1000
 Wire Wire Line
-	4600 3200 4450 3200
+	10500 2600 10500 3550
 Wire Wire Line
-	4450 3250 3650 3250
-Wire Wire Line
-	3650 3250 3650 3550
-Wire Wire Line
-	3650 3550 3600 3550
-Wire Wire Line
-	4250 3300 4250 2900
-Wire Wire Line
-	4250 3300 4600 3300
-Connection ~ 4250 2900
-Wire Wire Line
-	2600 2350 4300 2350
-Wire Wire Line
-	4600 3400 4200 3400
-Wire Wire Line
-	4200 3400 4200 2700
-Wire Wire Line
-	4200 2700 4150 2700
-Connection ~ 4150 2700
-Wire Wire Line
-	4600 3800 4350 3800
-Wire Wire Line
-	4350 3800 4350 2700
-Wire Wire Line
-	4350 2700 4200 2700
-Connection ~ 4200 2700
-Wire Wire Line
-	4450 3200 4450 3250
-Wire Wire Line
-	4600 3900 4150 3900
-Wire Wire Line
-	4150 3900 4150 2900
-Connection ~ 4150 2900
-Wire Wire Line
-	4150 2900 4000 2900
-Wire Wire Line
-	4600 4000 4000 4000
-Wire Wire Line
-	4000 4000 4000 3700
-Wire Wire Line
-	4600 4100 4050 4100
-Wire Wire Line
-	4050 4100 4050 3600
-Wire Wire Line
-	4050 3600 4000 3600
-Wire Wire Line
-	4600 4300 4100 4300
-Wire Wire Line
-	4100 4300 4100 3500
-Wire Wire Line
-	4100 3500 4000 3500
-Wire Wire Line
-	4600 4200 4250 4200
-Wire Wire Line
-	4250 4200 4250 3450
-Wire Wire Line
-	4250 3450 4100 3450
-Wire Wire Line
-	4100 3450 4100 3400
-Wire Wire Line
-	4100 3400 4000 3400
-NoConn ~ 4000 3300
-NoConn ~ 4000 3200
-NoConn ~ 4000 3100
-NoConn ~ 4000 3000
-Wire Wire Line
-	3600 3150 4400 3150
-Connection ~ 4600 3000
-Wire Wire Line
-	4600 3000 4300 3000
-Wire Wire Line
-	2450 2450 4050 2450
-Connection ~ 4400 2450
-Wire Wire Line
-	4050 2450 4400 2450
-Wire Wire Line
-	4050 2300 4050 2700
+	10450 2700 10250 2700
 $EndSCHEMATC
